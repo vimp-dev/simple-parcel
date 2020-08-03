@@ -1,0 +1,39 @@
+{
+  "name": "1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "parcel build pages/index.html -d public --no-source-maps && node postbuild.js",
+    "dev": "parcel pages/index.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.10.5",
+    "@babel/preset-react": "^7.10.4",
+    "autoprefixer": "^9.5.1",
+    "cssnano": "^4.1.10",
+    "postcss-modules": "^3.2.0",
+    "sass": "^1.26.10"
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {
+        "grid": "autoplace",
+        "overrideBrowserslist": [
+          "> 0.01%",
+          "last 20 versions",
+          "ie >= 9"
+        ]
+      }
+    }
+  },
+  "dependencies": {
+    "babel-polyfill": "^6.26.0",
+    "lodash.escaperegexp": "^4.1.2",
+    "replace-in-file": "^6.1.0"
+  }
+}
