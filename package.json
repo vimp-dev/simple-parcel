@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+   
     "build": "parcel build pages/index.html -d public --no-source-maps && node postbuild.js",
-    "dev": "parcel pages/index.html"
+    "dev": "parcel pages/index.html --open"
   },
   "keywords": [],
   "author": "",
